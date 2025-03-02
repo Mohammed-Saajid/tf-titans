@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tf-titans"
+version = "0.1.0"
+description = "A custom implementation of titans architecture."
+authors = [
+    { name = "Mohammed Saajid", email = "mohammedsaajid23@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+    "tensorflow>=2.11.0"
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/tf-titans/"
+Repository = "https://github.com/Mohammed-Saajid/tf-titans"
+
