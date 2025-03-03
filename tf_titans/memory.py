@@ -26,7 +26,7 @@ class LongTermMemory(tf.keras.layers.Layer):
         # Test time Trainable memory state
         self.memory_state = self.add_weight(
             shape=(1, self.units),  # Global memory state
-            initializer="zeros",
+            initializer=tf.keras.initializers.GlorotUniform(),
             trainable=True  # Allows updates via feedforward and backpropagation
         )
     

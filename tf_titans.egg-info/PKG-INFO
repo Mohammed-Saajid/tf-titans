@@ -1,0 +1,64 @@
+Metadata-Version: 2.2
+Name: tf-titans
+Version: 0.1.0
+Summary: A custom implementation of titans architecture.
+Home-page: https://github.com/Mohammed-Saajid/tf-titans
+Author: Mohammed Saajid
+Author-email: Mohammed Saajid <mohammedsaajid23@gmail.com>
+License: MIT
+Project-URL: Homepage, https://pypi.org/project/tf-titans/
+Project-URL: Repository, https://github.com/Mohammed-Saajid/tf-titans
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow>=2.11.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Custom Implementation of Titans Architecture in TensorFlow
+
+## Overview
+This repository provides a custom implementation of the Titans architecture using TensorFlow. The aim is to harness state-of-the-art neural network design principles to develop scalable and efficient deep learning models.
+
+## Description
+The repository presents an implementation based on the Titans architecture described in the paper "Titans: Learning to Memorize at Test Time". Please note that only "Memory as a Context" has been implemented, and some variations may exist compared to the paper.
+
+## Getting Started
+### Prerequisites
+- Python 3.7 or later
+- TensorFlow 2.x
+
+### Installation
+
+```bash
+pip install tf-titans
+```
+
+### Usage
+
+Refer to the example file to get started. It is recommended to use the custom training function for models that incorporate memory.
+
+## Contributing
+Contributions are welcome. Please feel free to submit issues and pull requests.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for further details.
+
+## Contact
+For inquiries or further discussion, please contact <mohammedsaajid23@gmail.com>.
+
+## Citations
+
+```
+@inproceedings{Behrouz2024TitansLT,
+    title   = {Titans: Learning to Memorize at Test Time},
+    author  = {Ali Behrouz and Peilin Zhong and Vahab S. Mirrokni},
+    year    = {2024},
+    url     = {https://api.semanticscholar.org/CorpusID:275212078}
+}
+```

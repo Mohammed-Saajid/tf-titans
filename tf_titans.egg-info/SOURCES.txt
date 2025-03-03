@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tests/tests.py
+tf_titans/__init__.py
+tf_titans/attention.py
+tf_titans/memory.py
+tf_titans/titans.py
+tf_titans/train.py
+tf_titans.egg-info/PKG-INFO
+tf_titans.egg-info/SOURCES.txt
+tf_titans.egg-info/dependency_links.txt
+tf_titans.egg-info/requires.txt
+tf_titans.egg-info/top_level.txt
