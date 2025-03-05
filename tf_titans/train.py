@@ -32,7 +32,7 @@ def compute_loss(labels, predictions, loss_object):
     loss = loss_object(y_true, last_token_predictions)  # Compute loss
     return tf.reduce_mean(loss)  # Return mean loss across batch
 
-def train(model, input_data, target_data, batch_size, loss_fn, optimizer, metrics, epochs):
+def train(model, input_data, target_data, batch_size, loss_fn, optimizer, metrics, epochs,alpha=0.5,theta=0.5):
     """
     Training function for the model.
     
@@ -82,7 +82,7 @@ def train(model, input_data, target_data, batch_size, loss_fn, optimizer, metric
             optimizer.apply_gradients(zip(non_memory_gradients, non_memory_variables))
 
             # Manually update memory variables using the custom memory update function
-            train_memory(model.titans.memory, memory_gradients, alpha=0.1, theta=0.1)
+            train_memory(model.titans.memory, memory_gradients, alpha=alpha, theta=theta)
             
             if metrics is not None:
                 # Update metrics
