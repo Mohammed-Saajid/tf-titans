@@ -56,7 +56,9 @@ class Titans(tf.keras.layers.Layer):
         self.memory_projection = tf.keras.layers.Dense(units = self.embedding_dim, activation="tanh")
         # Softmax layer for final classification
         if self.final_layer_ex:
-            self.final_layer = tf.keras.layers.Dense(units=self.total_words, activation='softmax')    
+            self.final_layer = tf.keras.layers.Dense(units=self.total_words, activation='softmax')
+        else:
+            self.final_layer = tf.keras.layers.Dense(units=self.embedding_dim, activation='relu')    
         
         super().build(input_shape)  # Register trainable weights
 

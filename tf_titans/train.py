@@ -45,6 +45,8 @@ def train(model, input_data, target_data, batch_size, loss_fn, optimizer, metric
         optimizer (tf.keras.optimizers.Optimizer): Optimizer for training.
         metrics (list): List of metrics for evaluation.
         epochs (int): Number of training epochs.
+        alpha (float): Weight decay parameter controlling past memory retention.
+        theta (float): Suprise rate parameter for memory updates.
     
     Returns:
         None

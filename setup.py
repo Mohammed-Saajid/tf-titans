@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="tf-titans",
-    version="0.1.1",
+    version="0.1.3",
     packages=find_packages(),
     install_requires=["tensorflow>=2.11.0"],
     author="Mohammed Saajid",

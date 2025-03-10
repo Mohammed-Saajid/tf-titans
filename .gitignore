@@ -1,5 +1,0 @@
-# Ignore Python-specific files
-__pycache__/
-# Ignore build and output directories
-dist/
-tf_titans.egg-info/
